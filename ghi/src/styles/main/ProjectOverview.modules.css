@@ -1,0 +1,141 @@
+
+*{
+    box-sizing: border-box;
+  }
+
+
+  .project-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    max-width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #662d91;
+    background-image: linear-gradient(135deg, #f07aa3 0%, #662d91 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-sizing:border-box;
+  }
+
+
+  .project_redirect_btn {
+  position: absolute;
+  bottom:20px;
+  background-color:#662d91;
+  color: #0bf4f3;
+  box-shadow: 0 5px #876784, 0 0 5px #0bf4f3 inset;
+  padding: 10px!important;
+  width:90px;
+  text-align:center;
+  color:white!important;
+  font-family: 'Your Chosen Font', sans-serif!important;
+
+  font-size:1.3rem!important;
+
+}
+
+
+  .project-row {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .project-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .project-container {
+        height:1200px;
+    }
+  }
+
+  .project-card {
+    width: calc(25% - 40px);
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        transform: rotate(-45deg);
+      }
+
+
+      @media (max-width: 1024px) {
+        .project-card {
+          width: calc(33.33% - 40px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .project-card {
+          width: calc(50% - 40px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .project-card {
+          width: calc(100% - 40px);
+        }
+      }
+
+  .project-card:hover {
+    width: 300px;
+    z-index: 1;
+  }
+
+
+
+
+  .project-card:hover .project-overlay,
+  .project-card.active .project-overlay {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+
+  .ipad-image {
+    width: 600px; 
+    height: auto;
+    border-radius:20px;
+
+  }
+
+  .project-overlay {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 510px;
+    height: 370px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    background-image: url("https://gohi.app/wp-content/uploads/2022/05/Go-Hi-Travel-App-Website-Launch-HITRANS-FOD-Mobility-Group-Mobilleo.png");
+    background-image: url("../../assets/images/novel-nexus.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .overlay-content {
+    text-align: center;
+  }
