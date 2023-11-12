@@ -1,0 +1,318 @@
+body .about-container {
+    display: flex;
+
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 799px;
+  margin: auto;
+   padding: 20px;
+}
+
+
+.image-section.world-map {
+  flex: 1;
+  /* min-width: 300px; */
+  /* padding: 20px; */
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  /* position: relative;  */
+}
+
+.image-section .worldm {
+
+}
+
+.content-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1.2em;
+  line-height: 1.6;
+  background-color: #212a3d;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+}
+
+.bio:hover{
+    box-shadow: 5px 5px 10px  rgb(65, 61, 168);
+
+}
+
+.bio p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+
+.test{
+  margin-top:-10% important;
+  overflow:hidden;
+  width: 700px!important;
+  height:700px!important;
+
+}
+
+
+
+.graphical-name{
+  margin-bottom:10px;
+  color: transparent;
+  background-clip:text;
+  background-image: linear-gradient(to right, #ff69b4, #800080);
+  animation: rotateColors 4s infinite linear;
+  text-align:center;
+  font-size:4rem;
+  margin-bottom:50px;
+}
+
+
+@keyframes rotateColors {
+  0% {
+    background-image: linear-gradient(to right, #ff69b4, #800080);
+  }
+  25% {
+    background-image: linear-gradient(to right, #800080, #ff69b4);
+  }
+  50% {
+    background-image: linear-gradient(to right, #ff69b4, #800080);
+  }
+  75% {
+    background-image: linear-gradient(to right, #800080, #ff69b4);
+  }
+  100% {
+    background-image: linear-gradient(to right, #ff69b4, #800080);
+  }
+}
+
+
+
+/*  */
+.hobbies-container {
+  display: flex;
+  max-width: 100%;
+  margin-top: 10%;
+  padding: 20px;
+  background-color: #220e2e;
+  color: #fff;
+}
+
+.hobbies-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hobbies-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+
+
+
+/*  */
+
+.abstract-art-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.abstract-art {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.paint-drip {
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  background-color: #ff69b4;
+  opacity: 0.7;
+  transform: rotate(45deg);
+}
+
+.paint-drip:nth-child(2) {
+  left: 20%;
+  transform: rotate(-45deg);
+}
+
+.paint-drip:nth-child(3) {
+  left: 35%;
+}
+
+.paint-drip:nth-child(4) {
+  left: 50%;
+  transform: rotate(-45deg);
+
+}
+
+.paint-drip:nth-child(5) {
+  left: 65%;
+}
+
+.paint-drip:nth-child(6) {
+  left: 25%;
+  transform: rotate(45deg);
+
+}
+
+.paint-drip:nth-child(6) {
+  left: 55%;
+
+}
+
+.paint-drip:nth-child(7) {
+  left: 85%;
+  transform: rotate(45deg);
+
+
+}
+
+
+
+
+.art-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.art-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.art-content p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+
+
+
+
+
+.hobby-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.hobby-image {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.hobbies-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30%;
+}
+.value-card {
+  position: relative;
+  flex: 0 0 30%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.card1 {
+  background-image: url('../../assets/images/travel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background-image: url('../../assets/images/innovation.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-image: url('../../assets/images//mission.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card1 .overlay {
+  background-color: rgba(186, 99, 154, 0.9);
+}
+
+.card2 .overlay {
+  background-color: rgba(91, 139, 138, 0.9);
+}
+
+.card3 .overlay {
+  background-color: rgba(175, 177, 84, 0.9);
+}
+
+
+
+/*  */
+.animated-video-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; 
+  }
